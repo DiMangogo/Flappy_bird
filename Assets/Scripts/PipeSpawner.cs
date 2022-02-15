@@ -6,11 +6,16 @@ public class PipeSpawner : MonoBehaviour
 {
 
     [SerializeField] float timeToSpawn = 1f;
-    [SerializeField] float borderTop = 0.8f;
+    [SerializeField] float borderTop = 0.6f;
     [SerializeField] float borderBottom = -0.2f;
     [SerializeField] GameObject pipes;
     // Start is called before the first frame update
     void Start()
+    {
+       
+    }
+
+    public void StartSpawning()
     {
         StartCoroutine(SpawnPipes());
     }
